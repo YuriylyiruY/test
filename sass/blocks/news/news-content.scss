@@ -1,0 +1,135 @@
+.news-content {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.news-content__list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.news-content__list .article-mini {
+    margin-bottom: 30px;
+
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+}
+
+.news-content__list .article-mini__image-wrap {
+    width: 290px;
+    height: 290px;
+    box-shadow: 0 0 13px rgba(0, 0, 0, 0.4);
+
+    &::before {
+        position: absolute;
+        content: "Подробнее...";
+        top: 50%;
+        left: 50%;
+        color: $white;
+        z-index: 5;
+        transform: translate(-50%, -50%);
+        display: none;
+    }
+}
+
+.news-content__list .article-mini__image-wrap img {
+    width: 290px;
+    height: 290px;
+}
+
+.news-content__list .article-mini__image-wrap:hover img {
+    opacity: 0.6;
+}
+
+.news-content__list .article-mini__image-wrap:hover {
+
+    &::before {
+        display: block;
+    }
+}
+
+.news__btn {
+    margin: 0 auto;
+    margin-top: 40px;
+    width: 167px;
+    height: 36px;
+    color: $white;
+    font-size: 14px;
+    font-weight: 700;
+    background-color: $dark-text;
+    border: 1px solid $corp-green;
+    background-image: none;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+
+    .news-content__list {
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .news-content__list .article-mini__image-wrap {
+        width: 220px;
+        height: 220px;
+    }
+
+    .news-content__list .article-mini__image-wrap img {
+        width: 220px;
+        height: 220px;
+    }
+
+    .news-content__list .article-mini {
+        width: 220px;
+    }
+
+    /*.news-content__btn {
+      flex-basis: 100%;
+    }*/
+}
+
+@media (min-width: 1024px) {
+    .news-content {
+        padding: 50px 0;
+    }
+
+    .news-content__list .article-mini {
+        width: 287px;
+    }
+
+    .news-content__list .article-mini__image-wrap {
+        width: 287px;
+        height: 287px;
+    }
+
+    .news-content__list .article-mini__image-wrap img {
+        width: 287px;
+        height: 287px;
+    }
+
+    .news__btn {
+        width: 267px;
+        height: 48px;
+    }
+}
+
+@media (min-width: 1440px) {
+
+    .news-content__list .article-mini {
+        margin-bottom: 50px;
+        width: 332px;
+    }
+
+    .news-content__list .article-mini__image-wrap {
+        width: 332px;
+        height: 332px;
+    }
+
+    .news-content__list .article-mini__image-wrap img {
+        width: 332px;
+        height: 332px;
+    }
+}

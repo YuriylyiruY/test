@@ -1,0 +1,173 @@
+.career {
+    width: 100%;
+    color: $dark-text;
+    overflow: hidden;
+}
+
+.career__background-wrap {
+    background-color: $white;
+}
+
+.career .container {
+    text-align: center;
+    overflow: visible;
+}
+
+.career__title span {
+    display: block;
+    margin-top: 10px;
+}
+
+.career p {
+    margin-bottom: 30px;
+    font-size: 14px;
+    line-height: $line-height-p;
+}
+
+.career__text--desktop {
+    display: none;
+}
+
+.career__list {
+    @include list-style;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    padding: 0 15px;
+}
+
+.career__item {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 84px;
+}
+
+.career__item:first-of-type,
+.career__item:nth-of-type(2) {
+    margin-bottom: 25px;
+}
+
+.career__step-number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 24px;
+    width: 84px;
+    height: 84px;
+    color: $corp-green;
+    font-size: 57px;
+    font-weight: 700;
+    background-color: $dark-text;
+    border-radius: 10px;
+}
+
+.career__step {
+    width: 84px;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.career .sign-up {
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+.career .sign-up__dropdown {
+    text-align: left;
+}
+
+.career .sign-up__options {
+    background-color: $dark-text;
+}
+
+.career .sign-up__mark {
+    color: $light-text;
+    background-color: $dark-text;
+}
+
+.career .sign-up__btn {
+  color: $dark-text;
+    background-image: linear-gradient(to bottom, rgba(209,233,42,1) 0%,rgba(137,155,3,1) 100%);
+}
+
+@media (min-width: 1024px) {
+
+    .career .container {
+        padding: 10px 0 76px;
+    }
+
+    .career p {
+        margin-bottom: 70px;
+        font-size: 24px;
+    }
+
+    .career__text--desktop {
+        display: block;
+    }
+
+    .career__list {
+        flex-wrap: nowrap;
+        margin-bottom: 80px;
+    }
+
+    .career__step-number {
+        margin-bottom: 26px;
+    }
+
+    .career__step {
+        font-size: 25px;
+    }
+
+    .career .sign-up {
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 1440px) {
+
+    .career .container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        padding-top: 10px;
+    }
+
+    .career__title {
+        display: flex;
+    }
+
+    .career__title span {
+        margin-top: 0;
+        margin-left: 13px;
+    }
+
+    .career__text--desktop {
+        display: block;
+        width: 100%;
+    }
+
+    .career__text--mobile {
+        display: none;
+    }
+
+    .career__list {
+        width: 100%;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    .career .sign-up {
+        margin-bottom: 130px;
+    }
+
+    .career__step {
+        font-weight: 400;
+    }
+}

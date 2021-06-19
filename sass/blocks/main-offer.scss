@@ -1,0 +1,850 @@
+.main-offer {
+	position: relative;
+	width: 100%;
+	background-repeat: no-repeat;
+}
+
+.main-offer .container {
+	padding-top: 26px;
+	padding-bottom: 53px;
+}
+
+.main-offer__text-block {
+	font-size: 14px;
+	line-height: 1.66;
+	color: $light-text;
+}
+
+.main-offer p {
+	margin-bottom: 50px;
+	font-size: 14px;
+	line-height: 1.66;
+	color: $light-text;
+}
+
+/* Стили для main-offer главной страницы */
+
+.main-offer--main {
+	background-image: url("../images/svg/corn.svg");
+	background-size: 80%;
+	background-repeat: no-repeat;
+	background-position: 190px 105px;
+}
+
+.main-offer--main .main-offer__text-block {
+	margin-bottom: 30px;
+}
+
+.main-offer--main p {
+	margin-bottom: 0;
+	width: 70%;
+}
+
+.main-offer--main .title {
+	margin-bottom: 30px;
+	line-height: 1.1;
+}
+
+.main-offer--main .title__strong {
+	font-size: 42px;
+	letter-spacing: 1px;
+}
+
+.main-offer--main .title__small {
+	margin-left: 7px;
+	letter-spacing: -1px;
+}
+
+.main-offer--main .title__colored {
+	color: $corp-blue;
+
+}
+
+/* Стили для main-offer страницы Обучение */
+
+.main-offer--education {
+	
+	background-position: 160px 20px;
+}
+
+.main-offer--education .title {
+	margin-bottom: 70px;
+}
+
+.main-offer--education p {
+	margin-bottom: 46px;
+	width: 70%;
+}
+
+.main-offer--education .sign-up__btn {
+	color: $dark-text;
+	background-image: $green-gradient;
+}
+
+.main-offer--education .title span,
+.main-offer--courses .title span {
+	display: block;
+}
+
+/* Стили для main-offer страницы Обучение - внутренняя (курсы) */
+
+.main-offer--courses .container {
+	padding-bottom: 20px;
+}
+
+.main-offer--courses .title span {
+	margin-bottom: 20px;
+}
+
+.main-offer__text--desktop {
+	display: none;
+}
+
+.main-offer--courses p,
+.main-offer--courses .sign-up {
+	display: none;
+}
+
+.main-offer--courses .title {
+	font-size: 32px;
+}
+
+/* Стили для main-offer страницы Стартапам */
+
+.main-offer--startup {
+	background-image: url("../images/svg/rocket1.svg");
+	background-repeat: no-repeat;
+	background-size: 200%;
+	background-position: -15px 152px;
+}
+
+.main-offer--startup .container {
+	padding-bottom: 81px;
+	padding-top: 16px;
+}
+
+.main-offer--startup .main-offer__text-block {
+	margin-bottom: 36px;
+}
+
+.main-offer--startup p {
+	margin-bottom: 50px;
+	width: 100%;
+	line-height: 1.5;
+}
+
+.main-offer--startup p span {
+	display: block;
+}
+
+.main-offer--startup .title {
+	margin-bottom: 25px;
+	font-size: 25px;
+	letter-spacing: 1px;
+	line-height: 1.4;
+}
+
+.main-offer--startup .title__colored {
+	color: $corp-blue;
+}
+
+.main-offer--startup .title__bullet .title__colored:first-child {
+	color: $corp-green;
+}
+
+.main-offer--startup .title__bullet {
+	padding-left: 0;
+
+	::before {
+		content: none;
+	}
+}
+
+/* Стили для main-offer страницы Кубок Сократа */
+
+.main-offer--socrat {
+	background-image: url("../images/svg/socrat-main-bg.svg");
+	background-repeat: no-repeat;
+	background-size: 345px;
+	background-position: bottom 200px left 20px;
+}
+
+.main-offer--socrat .container {
+	padding-bottom: 110px;
+	padding-top: 25px;
+}
+
+.main-offer--socrat .main-offer__text-block {
+	margin-bottom: 36px;
+}
+
+.main-offer--socrat p {
+	padding-bottom: 260px;
+	width: 85%;
+	font-size: 20px;
+}
+
+.main-offer--socrat .title {
+	font-size: 45px;
+	margin-bottom: 10px;
+	letter-spacing: 1px;
+	line-height: 1.2;
+}
+
+.main-offer--socrat .btn-socrat{
+	margin-right: auto;
+}
+
+/* Стили для main-offer страницы Инвесторам */
+
+.main-offer--investors {
+	background-image: url("../images/svg/money.svg");
+	background-repeat: no-repeat;
+	background-size: 243px;
+	background-position: top 18px left 50%;
+}
+
+.main-offer--investors .title {
+	margin-top: 284px;
+	margin-bottom: 16px;
+	font-size: 28px;
+}
+
+.main-offer--investors .title__colored {
+	color: $corp-blue;
+}
+
+
+/* Стили для main-offer страницы Компаниям */
+
+.main-offer--companies {
+	padding-bottom: 130px;
+	background-image: url("../images/svg/robots.svg");
+	background-repeat: no-repeat;
+	background-size: 221px;
+	background-position: bottom 10px left -40px;
+}
+
+.main-offer--companies .title {
+	margin-bottom: 16px;
+	font-size: 36px;
+}
+
+.main-offer--companies .title__colored {
+	color: $corp-blue;
+}
+
+.main-offer--companies p {
+	margin-bottom: 39px;
+	width: 100%;
+	font-size: 14px;
+}
+
+.main-offer--companies .title span {
+	display: block;
+}
+
+.main-offer--companies .companies__btn {
+	margin-left: auto;
+}
+
+.main-offer--investors p {
+	margin-bottom: 29px;
+	width: 100%;
+	font-size: 13px;
+
+}
+
+.main-offer--investors .title span {
+	display: block;
+}
+
+.main-offer--investors .sign-up {
+	width: 100%;
+}
+
+.main-offer--investors .sign-up__dropdown {
+	width: 100%;
+}
+
+.main-offer--investors .sign-up__mark {
+	width: 100%;
+}
+
+.main-offer--investors .sign-up__btn {
+	width: 100%;
+}
+
+@media (max-width: 375px) {
+	.main-offer--main {
+		background-size: 65%;
+		background-position: 230px 20px;
+	}
+	
+	.main-offer--main .main-offer__text-block {
+		margin-bottom: 50px;
+	}
+
+	.main-offer--main .main-offer p {
+		font-size: 12px;
+		line-height: 1.66;
+		color: $light-text;
+	}
+
+	.main-offer--main .title__strong {
+		font-size: 36px;
+	}
+	
+	.main-offer--main .title__small {
+		font-size: 32px;
+		margin-left: 0px;
+		letter-spacing: -1px;
+	}
+
+	//education
+
+	.main-offer--education {
+		background-image: url("../images/svg/svg-student.svg");
+		background-position: 220px 10px;
+		background-size: 50%;
+	}
+	
+	.main-offer--education .title {
+		margin-bottom: 20px;
+		font-size: 30px;
+	}
+	
+	.main-offer--education p {
+		margin-bottom: 60px;
+		width: 70%;
+	}
+
+	//startup
+
+	.main-offer--startup {
+		background-image: url("../images/svg/rocket1.svg");
+		background-repeat: no-repeat;
+		background-size: 200%;
+		background-position: 60px 150px;
+	}
+	
+}
+
+@media (min-width: 375px) {
+	/* Стили для main-offer главной страницы */
+
+	.main-offer--main {
+		background-position: 225px 55px;
+		background-size: 256px 322px;
+	}
+
+	.main-offer--main p {
+		width: 65%;
+		line-height: 1.9;
+	}
+
+	/* Стили для main-offer страницы Обучение */
+
+	.main-offer--education {
+		background-position: 190px 12px;
+	}
+
+	/* Стили для main-offer страницы Обучение - внутренняя (курсы) */
+
+	.main-offer--courses .title {
+		font-size: 36px;
+	}
+
+	/* Стили для main-offer страницы Стартапам */
+
+	.main-offer--startup {
+		background-size: 280%;
+		background-position: -172px 94px;
+	}
+
+	.main-offer--startup .container {
+		padding-bottom: 270px;
+	}
+
+	.main-offer--startup .title {
+		font-size: 30px;
+	}
+
+	/* Стили для main-offer страницы Кубок Сократа */
+
+	.main-offer--socrat title {
+		font-size: 50px;
+	}
+
+	.main-offer--socrat p {
+		font-size: 25px;
+	}
+
+	.main-offer--investors {
+		background-position: top 20px left 50px;
+	}
+}
+
+@media (min-width: 768px) {
+
+	.main-offer__text-block {
+		font-size: 20px;
+	}
+
+	.main-offer p {
+		font-size: 20px;
+		width: 50%;
+	}
+
+	/* Стили для main-offer главной страницы */
+
+	.main-offer--main {
+		background-size: 360px;
+		background-position: 380px 120px;
+	}
+
+	.main-offer--main .title__strong {
+		font-size: 61px;
+	}
+
+	/* Стили для main-offer страницы Обучение */
+
+	.main-offer--education {
+		background-position: 95% 0;
+	}
+
+	/* Стили для main-offer страницы стартапам*/
+
+	.main-offer--startup {
+		background-size: 1193px;
+		background-position: right -530px bottom -440px;
+	}
+
+	.main-offer--startup .title__strong {
+		font-size: 50px;
+	}
+
+	.main-offer--startup p {
+		width: 60%;
+	}
+
+	.main-offer--startup p span {
+		display: inline;
+	}
+
+	/* Стили для main-offer страницы Кубок Сократа*/
+
+
+	.main-offer--socrat {
+		background-size: 360px;
+		background-position: bottom 218px right;
+	}
+
+	.main-offer--socrat .container {
+		padding-top: 40px;
+	}
+
+	.main-offer--socrat p {
+		font-size: 28px;
+		width: 50%;
+		padding-bottom: 0;
+	}
+
+
+	/* Стили для main-offer страницы Компаниям */
+
+	.main-offer--companies {
+		padding-bottom: 0;
+		background-size: 300px;
+		background-position: top right 10%;
+	}
+
+	.main-offer--companies .companies__btn {
+		margin-left: 0;
+	}
+
+	/* Стили для main-offer страницы Инвесторам */
+
+	.main-offer--investors {
+		background-size: 300px;
+		background-position: top left 50%;
+	}
+
+	.main-offer--investors .title {
+		font-size: 52px;
+	}
+
+	.main-offer--investors .sign-up {
+		width: 202px;
+	}
+}
+
+@media (min-width: 1024px) {
+
+	.main-offer .container {
+		padding-bottom: 140px;
+	}
+
+	/* Стили для main-offer главной страницы */
+
+	.main-offer--main {
+		background-image: none;
+	}
+
+	.main-offer--main .container {
+		background-image: url("../images/svg/corn.svg");
+		background-size: 360px;
+		background-repeat: no-repeat;
+		background-position: right 10px center;
+	}
+
+	.main-offer--main .title__small {
+		margin-left: 9px;
+	}
+
+	.main-offer--courses .container {
+		padding-bottom: 70px;
+		background-image:
+						url("../images/svg/socrat.svg"),
+						url("../images/svg/campaigns.svg"),
+						url("../images/svg/socrat2.svg");
+		background-size:
+						188px,
+						200px,
+						200px;
+		background-repeat:
+						no-repeat,
+						no-repeat,
+						no-repeat;
+		background-position:
+						right 100px top 50px,
+						right 210px top 0,
+						right 0 top 0;
+	}
+
+	.main-offer--courses .title {
+		margin-bottom: 22px;
+	}
+
+	.main-offer--courses p {
+		display: block;
+		width: 51%;
+	}
+
+	.main-offer--courses .sign-up {
+		display: flex;
+	}
+
+	.main-offer--courses .sign-up__dropdown {
+		margin-right: 30px;
+	}
+
+	/* Стили для main-offer страницы стартапам*/
+
+	.main-offer--startup {
+		background-size: 1193px;
+	}
+
+	.main-offer--startup .container {
+		padding-bottom: 250px;
+		padding-top: 80px;
+	}
+
+	.main-offer--startup p {
+		width: 100%;
+	}
+
+	.main-offer--startup .main-offer__text-block {
+		width: 600px;
+	}
+
+	.main-offer--startup .title__strong {
+		position: relative;
+		font-size: 70px;
+		line-height: 1.2;
+	}
+
+	.main-offer--startup .title__bullet {
+		padding-left: 25px;
+
+		::before {
+			content: "";
+		}
+	}
+
+	/* Стили для main-offer страницы Кубок Сократа*/
+
+	.main-offer--socrat {
+		background-size: 500px;
+		background-position: bottom 151px right;
+	}
+
+	.main-offer--socrat .title {
+		font-size: 60px;
+	}
+
+	.main-offer--socrat p {
+		width: 50%;
+		padding-bottom: 0;
+	}
+
+
+	/* Стили для main-offer страницы Копаниям*/
+
+	.main-offer--companies {
+		background-size: 380px;
+		background-position: top right 20%;
+	}
+
+	.main-offer--companies .title {
+		margin-bottom: 23px;
+		font-size: 52px;
+	}
+
+	.main-offer--companies .main-offer__text {
+		margin-bottom: 31px;
+	}
+
+	.main-offer--companies .companies__btn {
+		width: 267px;
+	}
+
+	/* Стили для main-offer страницы Инвесторам */
+
+	.main-offer--investors {
+		background-size: 380px;
+		background-position: bottom 140px right;
+	}
+
+	.main-offer--investors .title {
+		margin-top: 110px;
+	}
+
+	.main-offer--investors .sign-up {
+		width: 584px;
+
+	}
+}
+
+@media (min-width: 1440px) {
+
+	.main-offer p {
+		font-size: 24px;
+	}
+
+	/* Стили для main-offer главной страницы */
+
+	.main-offer--main {
+		padding-top: 40px;
+		background-image: none;
+	}
+
+	.main-offer--main .container {
+		position: relative;
+		background-image: none;
+
+		&::before {
+			@include element-style(558px, 701px, transparent);
+			right: -141px;
+			background-image: url("../images/svg/corn.svg");
+			background-repeat: no-repeat;
+			background-size: contain;
+			background-position: center;
+		}
+
+		&::after {
+			@include element-style(220px, 325px, transparent);
+			left: -75px;
+			bottom: 80px;
+			background-image: url("../images/svg/rocket-main-offer.svg");
+			background-repeat: no-repeat;
+			background-size: contain;
+			background-position: center;
+			transform: translate(0, 72%);
+			opacity: 0.5;
+		}
+	}
+
+	.main-offer--main .title {
+		margin-bottom: 20px;
+		font-size: 88px;
+	}
+
+	.main-offer--main .title__strong {
+		font-size: 112px;
+	}
+
+	.main-offer--main .title__small {
+		margin-left: 33px;
+	}
+
+	.main-offer--main p {
+		margin-bottom: 40px;
+		width: 574px;
+	}
+
+	/* Стили для main-offer страницы Обучение */
+
+	.main-offer--education {
+		background-size: contain;
+		background-position: 80% 20%;
+	}
+
+	.main-offer--education .container {
+		padding-top: 130px;
+	}
+
+	.main-offer--education .title {
+		margin-top: 10px;
+		margin-bottom: 44px;
+	}
+
+	.main-offer--education p {
+		margin-bottom: 34px;
+		width: 574px;
+	}
+
+	.main-offer--education .sign-up__dropdown {
+		margin-bottom: 160px;
+	}
+
+	/* Стили для main-offer страницы Обучение - внутренняя (курсы) */
+
+	.main-offer--courses .container {
+		padding: 0;
+		padding-top: 44px;
+		padding-bottom: 67px;
+		background-position:
+						right 116px top 99px,
+						right 237px top 0,
+						right 0 top 0;
+	}
+
+	.main-offer--courses .title {
+		font-size: 70px;
+		line-height: 1.4;
+	}
+
+	.main-offer--courses .title span {
+		margin-bottom: 0;
+	}
+
+	.main-offer--courses p {
+		width: 552px;
+	}
+
+	.main-offer--courses .sign-up__dropdown {
+		margin-right: 50px;
+	}
+
+	.main-offer__text--desktop {
+		display: block;
+	}
+
+	.main-offer__text--mobile {
+		display: none;
+	}
+
+	/* Стили для main-offer страницы стартапам*/
+
+	.main-offer--startup {
+		background-image:
+						url("../images/svg/rocket1.svg"),
+						url("../images/svg/rocket-small.svg");
+		background-size:
+						1326px,
+						450px;
+		background-position:
+						right -472px top 0px,
+						left -105px bottom -170px;
+	}
+
+	.main-offer--startup .container {
+		padding-bottom: 320px;
+	}
+
+	.main-offer--startup .title {
+		margin-bottom: 0;
+	}
+
+	.main-offer--startup p {
+		margin-bottom: 64px;
+	}
+
+	.main-offer--startup .main-offer__text-block {
+		width: 730px;
+	}
+
+	/* Стили для main-offer страницы Кубок Сократа*/
+
+	.main-offer--socrat {
+		background-size: 550px;
+		background-position: bottom 151px right 15%;
+	}
+
+	.main-offer--socrat p {
+		font-size: 34px;
+		width: 60%;
+	}
+
+
+	/* Стили для main-offer страницы Компаниям */
+
+	.main-offer--companies {
+		background-size: 438px;
+		background-position: top right 25%;
+	}
+
+	.main-offer--companies .title {
+		font-size: 70px;
+	}
+
+	.main-offer--companies .main-offer__text {
+		font-size: 24px;
+	}
+
+	/* Стили для main-offer страницы Инвесторам */
+
+	.main-offer--investors {
+		background-size: 420px;
+		background-position: bottom 140px right 20%;
+	}
+
+	.main-offer--investors .title {
+		margin-top: 100px;
+		margin-bottom: 27px;
+		font-size: 70px;
+	}
+}
+
+@media (min-width: 1820px) {
+
+	/* Стили для main-offer главной страницы */
+
+	.main-offer--main .container::after {
+		left: -100px;
+		bottom: 80px;
+	}
+
+	/* Стили для main-offer страницы Стартапам*/
+
+	.main-offer--startup {
+		background-position: right -222px top 17px,
+		left 25px bottom -219px;
+	}
+
+	/* Стили для main-offer страницы Кубок Сократа*/
+
+	.main-offer--socrat {
+		background-size: 550px;
+		background-position: bottom 151px right 27%;
+	}
+
+	/* стили для main-offer стриницы Инвесторам */
+
+	.main-offer--investors {
+		background-size: 456px;
+		background-position: bottom 140px right 22%;
+	}
+}
+

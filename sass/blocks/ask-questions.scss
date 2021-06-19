@@ -1,0 +1,204 @@
+.ask-questions__wrap {
+	padding: 25px;
+	background-color: $dark-text;
+	border-radius: 20px;
+	box-shadow: 0px 0px 7px 7px rgba(0, 0, 0, 0.16);
+	box-sizing: border-box;
+}
+
+.ask-questions__title {
+	margin-bottom: 24px;
+	font-size: 24px;
+	font-weight: 700;
+}
+
+.ask-questions form {
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 20px;
+}
+
+.ask-questions input[type="email"] {
+	margin-bottom: 20px;
+	padding-left: 15px;
+	height: 36px;
+	font-size: 12px;
+	background-color: $white;
+	border: none;
+	border-radius: 7px;
+
+	&::placeholder {
+		font-family: inherit;
+		font-size: 16px;
+		color: $light-text;
+	}
+}
+
+.ask-questions input[type="submit"] {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 167px;
+	height: 36px;
+	font-size: 12px;
+	color: $white;
+	font-weight: 700;
+	white-space: nowrap;
+	border: none;
+	border-radius: 7px;
+	background-image: $red-gradient;
+	box-sizing: border-box;
+	box-shadow: 7px 6px 3px 0 rgba(0, 0, 0, 0.16);
+	cursor: pointer;
+}
+
+.ask-questions__btn {
+	padding: 0;
+	width: 167px;
+	border-radius: 7px;
+	white-space: nowrap;
+}
+
+#wpcf7-f1810-o1 > form > p > span.ajax-loader {
+	width: 0;
+	height: 0;
+}
+
+.ask-questions__link {
+	display: block;
+	margin: 18px 0 39px;
+	font-size: 12px;
+	font-weight: 700;
+	text-align: center;
+	color: $corp-blue;
+	text-decoration: underline;
+}
+
+@media (max-width: 375px) {
+	.ask-questions__btn {
+		width: 100%;
+		border-radius: 35px;
+	}
+}
+
+@media (min-width: 768px) {
+	.ask-questions .container {
+		overflow: visible;
+	}
+
+	.ask-questions__wrap {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		margin: 0 auto;
+		margin-bottom: 30px;
+		padding: 25px;
+		padding-left: 28px;
+		background-color: $dark-text;
+		border-radius: 20px;
+		box-shadow: 0px 0px 7px 7px rgba(0, 0, 0, 0.16);
+		box-sizing: border-box;
+	}
+
+	.ask-questions__title {
+		flex-basis: 100%;
+	}
+
+	.ask-questions .form {
+		position: relative;
+		display: flex;
+		flex-direction: row;
+		padding-bottom: 30px;
+		align-items: center;
+	}
+
+	.ask-questions input[type="email"] {
+		width: 303px;
+		height: 36px;
+		border-radius: 30px;
+	}
+
+	.ask-questions__btn {
+		margin-left: 16px;
+		width: 203px;
+		height: 36px;
+		border-radius: 35px;
+	}
+
+	.ask-questions .confidentiality {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+	}
+
+}
+
+@media (min-width: 1024px) {
+	.ask-questions__wrap {
+		flex-wrap: nowrap;
+		align-items: center;
+	}
+
+	.ask-questions__title {
+		margin: 0;
+		flex-basis: 30%;
+	}
+
+	.ask-questions form {
+		display: block;
+		padding-bottom: 0;
+	}
+
+	.ask-questions form p {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
+		align-items: center;
+		flex-wrap: nowrap;
+		width: 100%;
+	}
+
+	.ask-questions .wpcf7 {
+		margin-left: auto;
+	}
+
+	.ask-questions input[type="email"] {
+		height: 44px;
+		margin-bottom: 0;
+		margin-right: 15px;
+		margin-left: 100px;
+	}
+
+	.ask-questions input[type="submit"] {
+		align-self: center;
+		border-radius: 35px;
+	}
+
+	.ask-questions__btn {
+		height: 44px;
+	}
+
+	.ask-questions .wpcf7-acceptance {
+		display: none;
+	}
+
+	.ask-questions__link {
+		display: none;
+	}
+
+	.ask-questions .acceptance-954 {
+		display: none;
+	}
+}
+
+@media (min-width: 1440px) {
+	.ask-questions {
+		padding-top: 50px;
+	}
+
+	.ask-questions__wrap {
+		flex-wrap: nowrap;
+		width: 1000px;
+	}
+	
+}

@@ -1,0 +1,406 @@
+.pilot-project {
+    color: $dark-text;
+    overflow: hidden;
+}
+
+.pilot-project__background-wrap {
+    background-color: $white;
+}
+
+.pilot-project .container {
+    position: relative;
+    padding-top: 8px;
+    padding-bottom: 20px;
+}
+
+.pilot-project__meeting {
+    position: absolute;
+    display: block;
+    right: -70px;
+    top: 100px;
+    padding-top: 53px;
+    width: 282px;
+    height: 360px;
+    background-image:
+        url("../images/svg/corn.svg"),
+        url("../images/svg/meeting-table.svg");
+    background-size: 
+        72px 88px,
+        contain;
+    background-repeat: 
+        no-repeat,
+        no-repeat;
+    background-position: 
+        center bottom 12.64%,
+        center;
+        box-sizing: border-box;
+
+    &::before {
+        @include element-style(147px, 59px, transparent);
+        left: 0;
+        top: 50%;
+        transform: translate(0, -50%);
+        background-image: url("../images/svg/meeting-left.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+
+     &::after {
+        @include element-style(135px, 57px, transparent);
+        right: 0;
+        top: 50%;
+        transform: translate(0, -50%);
+        background-image: url("../images/svg/meeting-right.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+}
+
+.pilot-project__meeting .logo {
+    margin: 0 auto;
+    margin-bottom: 10px;
+    width: 47px;
+    height: 13px;
+
+    .logo__link {
+        width: 47px;
+        height: 12px;
+    }
+
+    .logo__svg-container {
+        width: 18px;
+        height: 12px;
+    }
+
+    svg {
+        width: 18px;
+        height: 12px;
+    }
+
+    span {
+        margin-left: 2px;
+        color: $white;
+        font-size: 4px;
+        line-height: 1;
+    }
+}
+
+.pilot-project__meeting-title {
+    text-align: center;
+    color: $white;
+    font-size: 19px;
+    font-weight: 800;
+    line-height: 1;
+    text-transform: uppercase;
+
+    .title__strong {
+        font-size: 24px;
+    }
+
+    span {
+        color: $corp-blue;
+    }
+}
+
+.pilot-project__text-block {
+    margin-bottom: 50px;
+    
+    &:first-of-type {
+        margin-bottom: 170px;
+    }
+
+    &:nth-of-type(3) {
+        margin-bottom: 0;
+        text-align: center;
+    }
+}
+
+.pilot-project__text {
+    font-size: 14px;
+    line-height: 1.66;
+}
+
+.pilot-project__text--desktop {
+    display: none;
+}
+
+.pilot-project__text-block:nth-of-type(2) p {
+    width: 88%;
+}
+
+.pilot-project__text-block-title-small {
+    font-size: 22px;
+}
+
+.pilot-project__text-block-title span {
+    display: block;
+}
+
+.pilot-project__btn {
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+@media (max-width: 375px) {
+    .pilot-project__text-block {
+
+        &:first-of-type {
+            margin-bottom: 50px;
+        }
+    
+        &:nth-of-type(3) {
+            
+            text-align: left;
+        }
+    }
+
+    .pilot-project__meeting {
+        position: relative;
+        display: block;
+        right: -20px;
+        top: 0;
+        padding-top: 53px;
+        margin-bottom: 50px;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .pilot-project__meeting {
+        right: 5%;
+        top: 70px;
+    }
+
+    .pilot-project__text span {
+        display: inline-block;
+    }
+
+    .pilot-project__text-block p {
+        font-size: 20px;
+        line-height: 1.45;
+    }
+
+    .pilot-project__text-block {
+
+        &:first-of-type {
+            margin-bottom: 40px;
+            width: 65%;
+        }
+
+        &:nth-of-type(2) {
+            width: 70%;
+        }
+    }
+
+    .pilot-project__btn {
+        font-size: 16px;
+        width: 202px;
+    }
+
+    .pilot-project__text-block:nth-of-type(2) .pilot-project__btn {
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .pilot-project {
+        background-image: none;
+    }
+
+    .pilot-project__meeting {
+        right: unset;
+        left: 10px;
+        top: 30px;
+        padding-top: 70px;
+        width: 370px;
+        height: 472px;
+        background-size: 
+            94px 114px,
+            contain;
+
+        &::before {
+            width: 193px;
+            height: 77px;
+        }
+
+        &::after {
+            width: 177px;
+            height: 75px;
+        }
+    }
+
+    .pilot-project__meeting .logo {
+        margin-bottom: 14px;
+        width: 62px;
+        height: 17px;
+
+        .logo__link {
+            width: 47px;
+            height: 17px;
+        }
+
+        .logo__svg-container {
+            width: 24px;
+            height: 17px;
+        }
+
+        svg {
+            width: 24px;
+            height: 17px;
+        }
+
+        span {
+            font-size: 5px;
+        }
+    }
+
+    .pilot-project__meeting-title {
+        font-size: 24px;
+
+        .title__strong {
+            font-size: 33px;
+        }
+    }
+
+    .pilot-project__text--mobile {
+        display: none;
+    }  
+ 
+    .pilot-project__text--desktop {
+        display: block;
+    }  
+
+    .pilot-project__text {
+        margin-left: auto;
+    }
+
+    .pilot-project__text-block {
+        margin-left: auto;
+        width: 48%;
+
+        &:first-of-type {
+            width: 60%;
+        }
+
+        &:nth-of-type(2) {
+            width: 60%;
+        }
+
+        &:last-of-type {
+            margin: 0 auto;
+            width: 60%;
+        }
+    }
+
+    .pilot-project__text-block:nth-of-type(2) p {
+        width: 100%;
+    }
+
+    .pilot-project__text-block .title__secondary {
+        margin-bottom: 20px;
+    }
+
+    .pilot-project__text-block-title-small {
+        font-size: 34px;
+    }
+
+    .pilot-project__text-block-title span {
+
+        &:first-of-type {
+            display: inline-block;
+        }
+    }
+
+    .pilot-project__btn {
+        width: 267px;
+        height: 48px;
+    }
+}
+
+@media (min-width: 1440px) {
+
+    .pilot-project .container {
+        background-size: 487px;
+        background-position: left 22px top 30px;
+    }
+
+    .pilot-project__meeting {
+        left: 22px;
+        padding-top: 95px;
+        width: 487px;
+        height: 621px;
+        background-size: 
+            146px 185px,
+            contain;
+
+        &::before {
+            width: 254px;
+            height: 101px;
+        }
+
+        &::after {
+            width: 232px;
+            height: 98px;
+        }
+    }
+
+    .pilot-project__meeting .logo {
+        margin: 0 auto;
+        margin-bottom: 20px;
+        width: 81px;
+        height: 22px;
+
+        .logo__link {
+            width: 81px;
+            height: 22px;
+        }
+
+        .logo__svg-container {
+            width: 30px;
+            height: 22px;
+        }
+
+        svg {
+            width: 30px;
+            height: 22px;
+        }
+
+        span {
+            font-size: 7px;
+        }
+    }
+
+    .pilot-project__meeting-title {
+        font-size: 33px; 
+
+        .title__strong {
+            margin-bottom: 5px;
+            font-size: 42px;
+        }
+    }
+
+    .pilot-project__text-block {
+        margin-left: auto;
+
+        &:first-of-type {
+            width: 48%;
+        }
+
+        &:nth-of-type(2) {
+            margin-bottom: 116px;
+            width: 48%;
+        }
+    }
+
+    .pilot-project__text-block-title-small {
+        font-size: 40px;
+    }
+
+    .pilot-project__text-block p {
+        font-size: 23px;
+        letter-spacing: -1px;
+    }
+}

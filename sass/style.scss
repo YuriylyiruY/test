@@ -1,0 +1,116 @@
+@import "global/fonts";
+@import "variables";
+@import "mixins";
+@import "global/vendor/swiper.min";
+@import "js/slick-1.8.1/slick-1.8.1/slick/slick.scss";
+@import "js/slick-1.8.1/slick-1.8.1/slick/slick-theme.scss";
+@import "global/scafolding";
+@import "blocks/scroll-bar";
+@import "blocks/btn";
+@import "blocks/bullets";
+@import "blocks/slick-dots";
+@import "blocks/title";
+@import "blocks/container";
+@import "blocks/page";
+@import "blocks/clouds";
+@import "blocks/form";
+@import "blocks/sign-up";
+@import "blocks/confidentiality";
+@import "blocks/ask-questions";
+// @import "blocks/accelerator-request";
+@import "blocks/write-us";
+@import "blocks/banners";
+@import "blocks/article-mini";
+@import "blocks/blog-categories-list";
+
+@import "blocks/header/toggler";
+@import "blocks/header/main-header";
+@import "blocks/header/top-bar";
+@import "blocks/header/campaign";
+@import "blocks/header/top-header";
+@import "blocks/header/logo";
+@import "blocks/header/main-nav";
+@import "blocks/header/main-nav-socrat";
+@import "blocks/header/mobile-nav";
+@import "blocks/header/language-switch";
+
+@import "blocks/footer/main-footer";
+@import "blocks/footer/footer-menu";
+@import "blocks/footer/footer-info";
+@import "blocks/footer/contact-us";
+
+@import "blocks/main-offer";
+@import "blocks/main/ecosystem";
+@import "blocks/main/getnews";
+@import "blocks/main/join-us";
+@import "blocks/main/option-slider";
+@import "blocks/main/paginator-slider";
+@import "blocks/main/our-mission";
+@import "blocks/main/pilot-project";
+@import "blocks/main/news-slider";
+@import "blocks/main/read-us";
+@import "blocks/main/partners";
+
+@import "blocks/startup/first-step";
+@import "blocks/startup/team";
+@import "blocks/startup/prospects";
+@import "blocks/startup/ideas";
+@import "blocks/startup/feedback";
+
+@import "blocks/socrat/cup-start";
+@import "blocks/socrat/cup-partners";
+@import "blocks/socrat/cup-award";
+@import "blocks/socrat/cup-guarantee";
+@import "blocks/socrat/footer-info-socrat.scss";
+
+@import "blocks/accelerator/accelerator-promo";
+@import "blocks/accelerator/reason";
+@import "blocks/accelerator/target";
+@import "blocks/accelerator/scenario";
+@import "blocks/accelerator/training";
+@import "blocks/accelerator/result";
+@import "blocks/accelerator/faq";
+@import "blocks/accelerator/price";
+
+@import "blocks/education/choose-course";
+@import "blocks/education/choose-profession";
+@import "blocks/education/career";
+@import "blocks/education/credences";
+@import "blocks/education/immigration-slider";
+@import "blocks/education/educational-programms";
+
+@import "blocks/courses/pop-up";
+@import "blocks/courses/filters";
+@import "blocks/courses/searching-form";
+@import "blocks/courses/categories";
+@import "blocks/courses/courses";
+@import "blocks/courses/paginator";
+@import "blocks/courses/aggregator";
+@import "blocks/courses/education-paltforms-proposal";
+
+@import "blocks/companies/trainee";
+@import "blocks/companies/companies-accelerator";
+@import "blocks/companies/programms";
+
+@import "blocks/investors/angels-club";
+@import "blocks/investors/choose-project";
+@import "blocks/investors/technology";
+@import "blocks/investors/pilot";
+
+@import "blocks/projects/projects";
+@import "blocks/projects/projects-filter";
+
+@import "blocks/news/news-links-list";
+@import "blocks/news/news-content";
+@import "blocks/news/news-subscribing-form";
+/*@import "blocks/news/block/block";
+@import "blocks/news/block/block-about";*/
+
+@import "blocks/digital/digital";
+@import "blocks/digital/command";
+@import "blocks/digital/technologies";
+@import "blocks/digital/work";
+
+@import "blocks/contact-form";
+@import "blocks/form-popup";
+@import "blocks/page-404";

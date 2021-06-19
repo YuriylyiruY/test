@@ -1,0 +1,169 @@
+.educational-programms {
+  width: 100%;
+  color: $dark-text;
+  overflow: hidden;
+}
+
+.educational-programms__background-wrap {
+  text-align: center;
+  background-color: $white;
+}
+
+.educational-programms .container {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.educational-programms__title {
+  text-align: left;
+}
+
+.educational-programms__inner-wrap {
+  position: relative;
+  width: 100%;
+  height: 340px;
+}
+
+.educational-programms__list {
+  @include list-style;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.educational-programms__item {
+  margin-right: 30px;
+  padding: 94px 16px 21px;
+  width: 274px;
+  border-radius: 17px;
+  background-color: $white;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-position: center 20px;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.educational-programms__item--school {
+  background-image: url("../images/icons/icon-backpack.svg");
+}
+
+.educational-programms__item--junior {
+  background-image: url("../images/icons/icon-find.svg");
+}
+
+.educational-programms__item--middle {
+  background-image: url("../images/icons/icon-web-development.svg");
+}
+
+.educational-programms__item--school .title__third {
+  width: 105px;
+}
+
+.educational-programms__item .title__third {
+  text-align: left;
+  margin-bottom: 19px;
+}
+
+.educational-programms__item p {
+  text-align: left;
+  color: #23272C;
+  font-size: 14px;
+  line-height: $line-height-p;
+  letter-spacing: 0;
+}
+
+.educational-programms__btn {
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 1024px) {
+
+    .educational-programms__title {
+      text-align: center;
+    }
+
+    .educational-programms__inner-wrap {
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+@media (min-width: 1440px) {
+   
+    .educational-programms .container {
+      padding-top: 0;
+      padding-bottom: 30px;
+    }
+
+    .educational-programms__title {
+        margin-bottom: 30px;
+        font-weight: 800;
+    }
+
+    .educational-programms__list {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .educational-programms__item {
+        position: relative;
+        margin: 0;
+        padding: 0;
+        padding-top: 135px;
+        box-shadow: none;
+
+        &::before {
+            @include element-style(103px, 103px, $white);
+            left: 0;
+            top: 0;
+            border-radius: 17px;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+
+    .educational-programms__item--school {
+        background-image: none;
+
+        &::before {
+            background-image: url("../images/icons/icon-backpack.svg");
+        }
+    }
+
+    .educational-programms__item--junior {
+        background-image: none;
+
+        &::before {
+            background-image: url("../images/icons/icon-find.svg");
+        }
+    }
+
+    .educational-programms__item--middle {
+        background-image: none;
+
+        &::before {
+            background-image: url("../images/icons/icon-web-development.svg");
+        }
+    }
+
+    .educational-programms__item .title__third {
+        font-size: 18px;
+    }
+
+    .educational-programms__item p {
+        font-size: 15px;
+    }
+
+    .educational-programms__btn {
+        margin-top: 30px;
+        width: 267px;
+    }
+}

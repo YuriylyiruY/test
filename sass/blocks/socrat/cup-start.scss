@@ -1,0 +1,83 @@
+.cup-start {
+    width: 100%;
+    padding-top: 15px;
+    color: $dark-text;
+    padding-bottom: 15px;
+    overflow: hidden;
+}
+
+.cup-start__background-wrap {
+    background-color: $white;
+}
+
+.cup-start .title__colored {
+    color: $accent-color;
+}
+
+.cup-start .title__secondary {
+    margin-bottom: 14px;
+    font-weight: 800;
+}
+
+.cup-start__text-block {
+    font-size: 20px;
+    line-height: 1.66;
+    margin-bottom: 15px;
+}
+
+@media (min-width: 768px) {
+
+    .btn-socrat {
+        margin-left: 0;
+    }
+
+    .cup-start .btn-socrat {
+        margin-left: 50%;
+    }
+
+    .cup-start .title__secondary {
+        margin-left: 50%;
+    }
+
+    .cup-start__text-block {
+        padding-left: 50%;
+        height: 320px;
+    }
+
+    .cup-start .container {
+        padding-bottom: 10px;
+        background-repeat: no-repeat;
+        background-image: url("../images/svg/socrat-start-bg.svg");
+        background-size: 300px;
+        background-position: left 10% top 40px;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .cup-start {
+        padding-bottom: 70px;
+        background-position: left 15% top 40px;
+    }
+    
+    .cup-start__text-block {
+        height: auto;
+        margin-bottom: 30px;
+    }
+}
+
+@media (min-width: 1440px) {
+
+    .cup-start {
+        padding-bottom: 70px;
+        background-position: left 25% top 40px;
+        background-size: 350px;
+    }
+}
+
+@media (min-width: 1820px) {
+
+    .cup-start {
+        background-size: 400px;
+    }
+}

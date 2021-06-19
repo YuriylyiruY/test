@@ -1,0 +1,139 @@
+.command {
+  width: 100%;
+  color: $dark-text;
+  overflow: hidden;
+}
+
+.command__background-wrap {
+  padding-top: 15px;
+  background-color: $white;
+  background-image: url("../images/svg/cosmonaut_red.svg");
+  background-repeat: no-repeat;
+  background-size: 343px;
+  background-position: -90px 110%;
+  padding-bottom: 130px;
+}
+
+.command__title {
+  text-transform: uppercase;
+  color: #EF4864;
+  font-size: 28px;
+  line-height: 40px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  margin-bottom: 35px;
+  width: 100%;
+
+  .command__title-second {
+    color: $black;
+  }
+
+  .command__description {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+    margin-bottom: 70px;
+  }
+}
+
+.command__btn {
+  margin-top: 68px;
+  margin-left: auto;
+  height: 36px;
+  width: 167px;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+@media (min-width: 768px) {
+  .command__title {
+    width: 58%;
+    font-size: 34px;
+    line-height: 41px;
+    margin-bottom: 10px;
+  }
+
+  .command__description {
+    width: 58%;
+    font-size: 18px;
+    line-height: 35px;
+    margin-bottom: 40px;
+  }
+
+  .command__btn {
+    margin: 0 auto;
+    margin-top: 68px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .command {
+    background-size: 425px 400px;
+    background-position: 4% 115%;
+  }
+
+  .command__background-wrap {
+    padding-bottom: 10px;
+    background-size: 427px;
+    background-position: 10% bottom;
+  }
+
+  .command__title {
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 0;
+    width: 59%;
+    margin-left: auto;
+  }
+
+  .command__description {
+    width: 59%;
+    font-size: 24px;
+    line-height: 35px;
+    margin-left: auto;
+    margin-bottom: 25px;
+  }
+
+  .command__btn {
+    margin-top: 20px;
+    margin-left: 41%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .command {
+    padding-bottom: 30px;
+  }
+
+  .command__title {
+    width: 51%;
+  }
+
+  .command__background-wrap {
+    background-position: 20% bottom;
+  }
+
+  .command__description {
+    width: 51%;
+  }
+
+  .command__btn {
+    margin-left: 49%;
+  }
+}
+
+@media (min-width: 1920px) {
+  .command__description {
+    line-height: 45px;
+  }
+
+  .command__background-wrap {
+    background-position: 30% bottom;
+  }
+
+  .command__btn {
+    width: 267px;
+  }
+}
+
+

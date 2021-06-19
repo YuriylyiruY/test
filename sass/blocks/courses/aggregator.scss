@@ -1,0 +1,182 @@
+.aggregator {
+	width: 100%;
+    color: $dark-text;
+    overflow: hidden;
+}
+
+.aggregator__background-wrap {
+	background-color: $white;
+}
+
+.aggregator__container {
+	background-image: url("../images/svg/socrat.svg");
+	background-repeat: no-repeat;
+	background-position: right -78px top 70px;
+	background-size: 196px;
+}
+
+.aggregator__title {
+	margin-bottom: 37px;
+}
+
+.aggregator__title span {
+	display: block;
+}
+
+.aggregator__text {
+	margin-bottom: 90px;
+	width: 60%;
+	font-size: 14px;
+	line-height: 1.57;
+}
+
+.aggregator__download-links-list {
+	position: relative;
+	@include list-style;
+	display: flex;
+	flex-direction: column;
+
+	&::before {
+		content: "Скачайте наше приложение для своего телефона";
+		position: absolute;
+		display: block;
+		right: 10px;
+		bottom: 13px;
+		width: 48%;
+		font-size: 11px;
+		background-color: transparent;
+	}
+}
+
+.aggregator__download-links-item {
+	margin-bottom: 26px;
+
+	&:last-of-type {
+		margin-bottom: 0;
+	}
+}
+
+.aggregator__download-links-item a {
+	@include link-style;
+}
+
+.aggregator__download-links-item--apple img {
+	width: 143px;
+}
+
+.aggregator__download-links-item--google img {
+	width: 163px;
+}
+
+@media (min-width: 768px) {
+
+	.aggregator {
+		padding: 40px 0;
+	}
+
+	.aggregator__container {
+		background-position: right 50px top 0;
+	}
+
+	.aggregator__text {
+		margin-bottom: 30px;
+		font-size: 20px;
+	}
+
+	.aggregator__download-links-list {
+
+		&::before {
+			right: unset;
+			left: 180px;
+		}
+	}
+}
+
+@media (min-width: 1024px) {
+
+	.aggregator__container {
+		padding-top: 20px;
+		padding-bottom: 40px;
+		background-image:
+		    url("../images/svg/campaigns.svg"),
+		    url("../images/svg/socrat.svg");
+		background-repeat:
+		    no-repeat,
+		    no-repeat;
+		background-position:
+		    right 228px top 45px,
+		    right 20px top 10px;
+		background-size:
+		    165px,
+		    188px;
+	}
+
+	.aggregator__text {
+		width: 52%;
+	}
+
+	.aggregator__download-links-list {
+		flex-direction: row;
+
+		&::before {
+			left: 367px;
+			width: 207px;
+		}
+	}
+
+	.aggregator__download-links-item {
+		margin-bottom: 0;
+		margin-right: 36px;
+
+		&:last-of-type {
+			margin-right: 0;
+		}
+	}
+
+}
+
+@media (min-width: 1440px) {
+
+    .aggregator {
+    	background-image: none;
+    }
+
+    .aggregator .container {
+    	padding-top: 20px;
+    	padding-bottom: 35px;
+    	
+    }
+
+    .aggregator__text {
+    	margin-bottom: 54px;
+    	font-size: 23px;
+    }
+
+    .aggregator__download-links-list {
+    	flex-direction: row;
+
+    	&::before {
+    		font-size: 16px;
+    		right: unset;
+    		left: 414px;
+    		width: 240px;
+    	}
+    }
+
+    .aggregator__download-links-item {
+    	margin-bottom: 0;
+    	margin-right: 36px;
+
+    	&:last-of-type {
+    		margin-right: 0;
+    	}
+    }
+
+    .aggregator__download-links-item--apple img {
+		width: 167px;
+	}
+
+	.aggregator__download-links-item--google img {
+		width: 185px;
+	}
+}

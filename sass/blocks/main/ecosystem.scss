@@ -1,0 +1,206 @@
+.ecosystem {
+    width: 100%;
+    color: $dark-text;
+    overflow: hidden;
+}
+
+.ecosystem__wrap {
+    width: 100%;
+    background-color: $white;
+}
+
+.ecosystem .container {
+    position: relative;
+    padding-top: 115px;
+    padding-bottom: 85px;
+}
+
+.ecosystem__background-content {
+    position: absolute;
+    right: -216px;
+    bottom: 10px;
+    width: 361px;
+    height: 388px;
+    overflow: hidden;
+    z-index: 100;
+}
+
+.ecosystem__background-content-tablet {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 327px;
+}
+
+.ecosystem__background-content-phone {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 158px;
+    z-index: 120;
+}
+
+.ecosystem__background-content-clouds {
+    position: absolute;
+    left: -10px;
+    bottom: 0;
+    width: 370px;
+    z-index: 130;
+}
+
+.ecosystem__title {
+    font-weight: 800;
+}
+
+.ecosystem__title span {
+    display: block;
+}
+
+.ecosystem p {
+    font-size: 14px;
+    line-height: 1.66;
+    width: 55%;
+    margin-bottom: 40px;
+}
+
+.ecosystem__form select {
+    background-color: rgba(0,0,0, 0.8);
+}
+
+.ecosystem .sign-up {
+    padding-bottom: 10px;
+}
+
+.ecosystem .sign-up .sign-up__mark {
+    background-color: $dark-text;
+}
+
+.ecosystem .sign-up__options {
+    background-color: $dark-text;
+}
+
+@media (max-width: 375px) {
+    .ecosystem .container {
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
+
+    .ecosystem p {
+        width: 55%;
+        margin-bottom: 230px;
+    }
+
+    .ecosystem__background-content {
+        position: absolute;
+        right: -200px;
+        top: 130px;
+        width: 361px;
+        height: 348px;
+        overflow: hidden;
+        z-index: 100;
+    }
+    
+    .ecosystem__background-content-tablet {
+        position: absolute;
+        left: 30px;
+        top: 10px;
+        width: 264px;
+    }
+    
+    .ecosystem__background-content-phone {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 107px;
+        z-index: 120;
+    }
+
+    .ecosystem__title {
+        font-size: 22px;
+    }
+    
+    .ecosystem__background-content-clouds {
+        position: absolute;
+        left: -60px;
+        bottom: 0;
+        height: 70px;
+        width: auto;
+        z-index: 130;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .ecosystem__background-content {
+        right: -70px;
+    }
+
+    .ecosystem p {
+        font-size: 20px;
+        width: 400px;
+    }
+
+    .ecosystem__title {
+        width: 80%;
+    }
+
+    .ecosystem__title span {
+        display: inline;
+    }
+}
+
+@media (min-width: 1024px) {
+   
+    .ecosystem .container {
+        padding-top: 310px;
+        padding-bottom: 197px;
+    }
+
+    .ecosystem__background-content {
+        right: -316px;
+        bottom: 0;
+        width: 730px;
+        height: 730px;
+    }
+
+    .ecosystem__background-content-tablet {
+        width: 617px;
+    }
+
+    .ecosystem__background-content-phone {
+        width: 351px;
+    }
+
+    .ecosystem__background-content-clouds {
+        width: 735px;
+    }
+
+    .ecosystem__title {
+        width: 60%;
+    }
+
+    .ecosystem .sign-up__dropdown {
+        margin-right: 28px;
+    }
+}
+
+@media (min-width: 1440px) {
+    
+    .ecosystem .container {
+        padding-top: 456px;
+        padding-bottom: 150px;
+    }
+
+    .ecosystem__background-content {
+        bottom: 40px;
+    }
+
+    .ecosystem p {
+        font-size: 24px;
+        width: 491px;
+    }
+
+    .ecosystem__title {
+        max-width: 660px;
+    }
+}

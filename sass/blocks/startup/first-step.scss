@@ -1,0 +1,149 @@
+.first-step {
+  position: relative;
+  margin-top: -80px;
+  width: 100%;
+  color: $dark-text;
+  overflow: hidden;
+
+  &__background-wrap {
+    width: 100%;
+    background-color: $white;
+  }
+
+  & .container {
+    padding-top: 280px;
+    background-image: url("../images/svg/cosmonaut.svg");
+    background-repeat: no-repeat;
+    background-size: 306px;
+    background-position: 50% top;
+  }
+
+  & .title__secondary {
+    font-weight: 800;
+    text-align: center;
+  }
+
+  & .title__colored {
+    color: $corp-blue;
+  }
+
+  & .btn {
+    margin-left: auto;
+    margin-top: 45px;
+    margin-bottom: 10px;
+    height: 50px;
+    width: 100%;
+    font-size: 20px;
+  }
+
+  &__text-block {
+    font-size: 14px;
+    line-height: 1.66;
+  }
+
+  &__legend {
+    font-size: 10px;
+    width: 100%;
+    margin-left: 0;
+    text-align: left;
+    line-height: 1.6;
+
+    & p {
+      margin-top: 20px;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .first-step {
+    & .btn {
+      width: 100%;
+    }
+
+    &__legend {
+      width: 100%;
+      margin-left: auto;
+      text-align: left;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .first-step {
+    margin-top: -190px;
+
+    & .btn {
+      margin-left: 0;
+      margin-top: 10px;
+      margin-bottom: 40px;
+    }
+
+    &__legend {
+      margin-left: 0;
+      width: 100%;
+      text-align: left;
+
+      & p {
+        margin-top: 5px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .first-step {
+    & .container {
+      padding-top: 55px;
+      background-size: 477px;
+      background-position: left top;
+    }
+
+    &__inner-wrap {
+      width: 50%;
+      margin-left: auto;
+    }
+
+    &__text-block {
+      font-size: 20px;
+      line-height: 2;
+    }
+
+    &__legend {
+      font-size: 15px;
+    }
+
+    & .btn {
+      height: 48px;
+      width: 267px;
+      border-radius: 15px;
+      -webkit-border-radius: 15px;
+      -moz-border-radius: 15px;
+      -ms-border-radius: 15px;
+      -o-border-radius: 15px;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .first-step {
+    & .container {
+      padding-top: 45px;
+      background-size: 477px;
+      background-position: left 50%;
+    }
+
+    &__text-block {
+      font-size: 24px;
+    }
+  }
+}
+
+@media (min-width: 1820px) {
+  .first-step {
+    background-position: left 380px top 10px;
+
+    &__text-block {
+      font-size: 24px;
+    }
+  }
+}

@@ -1,0 +1,85 @@
+.toggler {
+	width: 15px;
+	height: 10px;
+	cursor: pointer;
+}
+
+.toggler span {
+	position: relative;
+	display: block;
+	width: 15px;
+	height: 2px;
+	border-radius: 1px;
+	background-color: $white;
+
+	&::before {
+		@include element-style(15px, 2px, $white);
+		top: 4px;
+		left: 0;
+		border-radius: 1px;
+	}
+
+	&::after {
+		@include element-style(15px, 2px, $white);
+		top: 8px;
+		left: 0;
+		border-radius: 1px;
+	}
+}
+
+.toggler--cross {
+	position: relative;
+	height: 15px;
+}
+
+.toggler--cross span {
+	position: absolute;
+	width: 20px;
+	top: 7px;
+	left: -2px;
+	transform: rotate(45deg);
+
+	&::before {
+		width: 20px;
+		top: unset;
+		transform: rotate(-90deg);
+	}
+
+	&::after {
+		display: none;
+	}
+}
+
+@media (min-width: 768px) {
+	.toggler {
+		display: none;
+	}
+
+    .toggler {
+		width: 25px;
+		height: 10px;
+	}
+
+	.toggler span {
+		width: 25px;
+
+		&::before {
+			width: 25px;
+			top: 6px;
+		}
+
+		&::after {
+			width: 25px;
+			top: 12px;
+		}
+	}
+
+	.toggler--cross span {
+
+		&::before {
+			top: unset;
+		}
+	}
+
+}
+

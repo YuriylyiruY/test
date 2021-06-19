@@ -1,0 +1,71 @@
+::-webkit-input-placeholder {
+	font-size: 14px;
+	color: $light-text;
+	font-family: "Gotham Pro";
+	line-height: 1;
+}
+
+::-moz-placeholder {
+	font-size: 14px;
+	color: $light-text;
+	font-family: "Gotham Pro";
+	line-height: 1;
+}/* Firefox 19+ */
+
+:-moz-placeholder {
+	font-size: 14px;
+	color: $light-text;
+	font-family: "Gotham Pro";
+	line-height: 1;
+}/* Firefox 18- */
+
+:-ms-input-placeholder {
+	font-size: 14px;
+	color: $light-text;
+	font-family: "Gotham Pro";
+	line-height: 1;
+}
+
+
+.form input {
+	padding-left: 15px;
+	height: 36px;
+	font-size: 12px;
+	background-color: $white;
+	border: none;
+	border-radius: 7px;
+}
+
+.form input[type="email"] {
+	width: 100%;
+}
+
+@media (min-width: 1024px) {
+
+    .form input {
+		height: 48px;
+		font-size: 16px;
+		border-radius: 15px;
+	}	
+}
+
+@media (min-width: 1440px) {
+
+	::-webkit-input-placeholder {
+		font-size: 16px;
+	}
+
+	::-moz-placeholder {
+		font-size: 16px;
+	}/* Firefox 19+ */
+
+	:-moz-placeholder {
+		font-size: 16px;
+	}/* Firefox 18- */
+
+	:-ms-input-placeholder {
+		font-size: 16px;
+	}
+    
+}
+

@@ -1,0 +1,41 @@
+.news-slider {
+	margin-bottom: 30px;
+}
+
+.news-slider__list {
+	@include list-style;
+}
+
+.news-slider .slick-dots {
+	margin-top: 22px;
+}
+
+@media (min-width: 768px) {
+
+	.news-slider {
+		position: absolute;
+		top: -50px;
+		right: 22px;
+		margin-bottom: 0;
+		width: 300px;
+	}
+}
+
+@media (min-width: 1024px) {
+
+	.news-slider {
+		right: 90px;
+	}
+}
+
+@media (min-width: 1440px) {
+
+	.news-slider {
+		right: 46px;
+		width: 343px;
+	}
+
+	.news-slider .slick-dots {
+		margin-top: 30px;
+	}
+}

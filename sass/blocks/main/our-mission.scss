@@ -1,0 +1,71 @@
+.our-mission {
+    color: $dark-text;
+    overflow: hidden;
+}
+
+.our-mission__background-wrap {
+    padding-top: 30px;
+    padding-bottom: 132px;
+    width: 100%;
+    background-color: $white;
+    background-image: url("../images/svg/rocket.svg");
+    background-repeat: no-repeat;
+    background-size: 103px;
+    background-position: 50% 100%;
+}
+
+.our-mission .title__colored {
+    color: $corp-blue;
+}
+
+.our-mission p {
+    font-size: 14px;
+    line-height: 1.66;
+}
+
+@media (min-width: 1024px) {
+
+    .our-mission__background-wrap {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background-image: none;
+    }
+
+    .our-mission .container {
+        background-image: url("../images/svg/rocket.svg");
+        background-repeat: no-repeat;
+        background-size: 200px;
+        background-position: left 77px center;
+    }
+
+    .our-mission__text {
+        width: 546px;
+        margin-left:440px;
+    }
+
+    .our-mission p {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 1440px) {
+    
+    .our-mission .container {
+        background-size: 306px;
+        background-position: left 41px center;
+    }
+
+    .our-mission p {
+        font-size: 24px;
+    }
+
+    .our-mission__img img {
+        width: 307px;
+    }
+
+    .our-mission__img {
+        margin-top: -370px;
+        align-self: flex-start;
+        margin-left: 20px;
+    }
+}

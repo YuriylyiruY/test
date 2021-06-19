@@ -1,0 +1,168 @@
+.scenario {
+  overflow: hidden;
+
+  &__background-wrap {
+    padding-top: 300px;
+    padding-bottom: 10px;
+    background-color: $white;
+    background-repeat: no-repeat;
+    background-size: 200px;
+    background-image: url("../images/svg/note.svg");
+    background-position: center top;
+  }
+
+  .title__secondary {
+    margin-bottom: 5px;
+    font-size: 34px;
+    font-weight: 800;
+    color: $dark-text;
+  }
+
+  &__text-block {
+    font-size: 20px;
+    color: $dark-text;
+  }
+
+  &__btn {
+    width: 250px;
+    margin: 0 auto;
+    margin-top: 0;
+    padding: 11px 70px 12px;
+    border-radius: 15px;
+  }
+
+  &__slider {
+    margin-top: 40px;
+    overflow: hidden;
+  }
+
+  &__slider-list {
+    display: flex;
+  }
+
+  &__slider-item {
+    position: relative;
+    width: 100%;
+    padding: 90px 30px 0;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      width: 49px;
+      height: 49px;
+      background-color: $dark-text;
+      border-radius: 10px;
+      box-shadow: 3px 0 6px $light-text;
+    }
+  }
+
+  &__slider-item--active::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      width: 49px;
+      height: 49px;
+      background: $blue-gradient;
+      border-radius: 10px;
+      box-shadow: 3px 0 6px $light-text;
+  }
+
+  &__slider h3 {
+    font-size: 18px;
+    font-weight: 800;
+    color: $dark-text;
+  }
+
+  &__slider p {
+    font-size: 15px;
+    color: $dark-text;
+  }
+
+  .slick-dotted.slick-slider {
+    margin: 0;
+  }
+  
+  .slick-list {
+    padding: 0;
+    padding-bottom: 70px;
+  }
+  
+  .slick-dots {
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+    transform: translate(-50%);
+    z-index: 100;
+
+    & li button {
+      width: 15px;
+      height: 15px;
+      background-color: $dark-text
+    }
+  }
+
+  .slick-dots .slick-active button {
+    background-color: $corp-green;
+  }
+
+  .dotted {
+    position: absolute;
+    top: 22px;
+    left: 90px;
+    display: block;
+    width: 80%;
+    height: 2px;
+    border-bottom: 2px dashed $dark-text;
+  }
+}
+
+@media (min-width: 768px) {
+  .scenario {
+
+    &__background-wrap {
+      padding-top: 0;
+      background-position: left 15% top;
+    }
+
+    &__wrap {
+      width: 60%;
+      margin-left: auto;
+    }
+
+    &__slider {
+      margin-top: 60px;
+    }
+
+    &__slider-list {
+      width: 100%;
+      justify-content: space-around;
+    }
+
+    &__slider-item {
+      width: 30%;
+    }
+
+    &__btn {
+      margin-top: 30px;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .scenario {
+
+    &__background-wrap {
+      background-position: left 20% top;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .scenario {
+
+    &__background-wrap {
+      background-position: left 30% top;
+    }
+  }
+}

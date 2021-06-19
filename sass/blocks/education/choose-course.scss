@@ -1,0 +1,108 @@
+.choose-course {
+    width: 100%;
+    color: $dark-text;
+    overflow: hidden;
+}
+
+.choose-course__background-wrap {
+    width: 100%;
+    background-color: $white;
+}
+
+.choose-course .container {
+    padding-bottom: 10px;
+}
+
+.choose-course__wrap {
+    width: 80%;
+}
+
+.choose-course__title span {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.choose-course__btn {
+    margin-top: 30px;
+}
+
+.choose-course p {
+    font-size: 14px;
+    line-height: 1.87;
+}
+
+@media (max-width: 375px) {
+    .choose-course__wrap {
+        width: 100%;
+    }
+
+    .choose-course p {
+        width: 80%;
+    }
+}
+
+@media (min-width: 1024px) {
+    
+    .choose-course .container {
+        padding: 30px 36px;
+        background-image: 
+            url("../images/svg/socrat.svg"),
+            url("../images/svg/campaigns.svg");
+        background-repeat:
+            no-repeat,
+            no-repeat;
+        background-size:
+            188px,
+            165px;
+        background-position:
+            left 36px top 0, 
+            left 255px top 35px;
+    }
+
+    .choose-course__wrap {
+        margin-left: auto;
+        width: 50%;
+    }
+
+    .choose-course__title {
+        font-weight: 800;
+    }
+
+    .choose-course__btn {
+        margin-right: auto;
+    }
+}
+
+@media (min-width: 1440px) {
+
+    .choose-course .container {
+        padding: 0;
+        padding-bottom: 10px;
+        background-position:
+            left 0 top 0, 
+            left 219px top 35px;
+    }
+
+    .choose-course__wrap {
+        width: 54%;
+    }
+
+    .choose-course__title {
+        letter-spacing: -2px;
+    }
+
+    .choose-course__title span {
+        display: inline-block;
+    }
+
+    .choose-course p {
+        font-size: 24px;
+        line-height: 1.88;
+        letter-spacing: -1px;
+    }
+
+    .choose-course__btn {
+        margin-top: 47px;
+       width: 267px;
+    }
+}

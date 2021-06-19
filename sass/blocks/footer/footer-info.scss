@@ -1,0 +1,134 @@
+.footer-info {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	margin-top: 70px;
+	color: $light-text;
+	font-size: 12px;
+}
+
+.footer-info__logo {
+	display: none;
+}
+
+.footer-info__company {
+	flex-basis: 100%;
+	align-self: center;
+	margin-bottom: 37px;
+}
+
+.footer-info__polity-box {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	letter-spacing: -0.5px;
+}
+
+.footer-info__polity-box span {
+	margin-left: 5px;
+    margin-right: 5px;
+}
+
+.footer-info__polity {
+	@include link-style;
+}
+
+.footer-info__polity:hover {
+	color: $corp-blue;
+}
+
+@media (min-width: 768px) {
+
+	.footer-info {
+		position: relative;
+		flex-direction: row;
+		justify-content: space-between;
+        margin-top: 0;
+        padding-top: 34px;
+        padding-bottom: 34px;
+        width: 85%;
+
+		&::before {
+			@include element-style(80%, 1px, $white);
+			top: 0;
+			left: 50%;
+			transform: translate(-50%);
+		}
+	}
+
+	.footer-info__company {
+		flex-basis: unset;
+		margin: 0;
+	}
+}
+
+@media (min-width: 1024px) {
+
+	.footer-info {
+		justify-content: flex-start;
+		margin-top: 33px;
+		padding: 0;
+		width: 100%;
+		font-size: 16px;
+
+		&::before {
+			left: 95px;
+			width: 90%;
+			transform: none;
+		}
+	}
+
+	.footer-info__logo {
+		position: relative;
+		display: block;
+		margin-right: 25px;
+		width: 73px;
+		height: 73px;
+		background-image: $blue-gradient;
+		cursor: pointer;
+		
+	}
+
+	.footer-info__logo a {
+		position: relative;
+		@include link-style;
+		width: 73px;
+		height: 73px;
+		padding: 22px 10px;
+		box-sizing: border-box;
+	}
+
+	.footer-info__logo svg {
+		position: absolute;
+		top: 50%;
+		left: 10px;
+		width: 43px;
+		height: 29px;
+		fill: $white;
+		transform: translate(0, -50%);
+	}
+
+	.footer-info__logo span {
+		display: inline-block;
+		position: absolute;
+		left: 49px;
+		top: 42%;
+		font-size: 9px;
+		color: $white;
+		text-transform: uppercase;
+		font-weight: 700;
+		letter-spacing: 0;
+		transform: rotate(-90deg) translate(0, -50%);
+	}
+
+	.footer-info__polity-box {
+		margin-left: 86px;
+		letter-spacing: unset;
+	}
+
+	.footer-info__polity-box span {
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+}

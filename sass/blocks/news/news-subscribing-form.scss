@@ -1,0 +1,11 @@
+.news-subscribing-form {
+	padding-top: 20px;
+	padding-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+
+	.news-subscribing-form {
+		display: none;
+	}
+}
